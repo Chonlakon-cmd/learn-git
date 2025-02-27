@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="/CSS/payment.css" /> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="box-all">
+        <div class="login-container">
+        
+            <div class="login-card" >
+                <div class="icon">
+                <a  href="/HTML/account.html"><img src="img/🦆 icon _chevron left_.png" alt=""></a>
+             
+                <div class="room-card">
+                    <img src="img/roomall.png" alt="Room 1" class="room-image" />
+                    <div class="room-content">
+                      <h3>Room 1</h3>
+                      <p>รายละเอียดภายในบ้านพักราคา 4,000 บาท<br>
+                        <h4>1. ห้องนอน </h4>
+                        <li> ขนาด: 1 ห้องนอน (ประมาณ 3x4 เมตร)</li>
+                        <li> เฟอร์นิเจอร์: เตียงขนาด 5 ฟุต, ตู้เสื้อผ้า, โต๊ะเครื่องแป้ง</li>
+                        <li>  เครื่องปรับอากาศ</li>
+                        <h4>2. ห้องน้ำ </h4>
+                        <li>สิ่งอำนวยความสะดวก: โถสุขภัณฑ์, ฝักบัว, อ่างล้างหน้า</li>
+                        <li>มีระบบน้ำอุ่น</li>
+                        <h4>3. สิ่งอำนวยความสะดวกในบ้าน </h4>
+                        <li> ผ้าม่านกันแสง</li>
+                        <li> พื้นปูด้วยกระเบื้อง</li>
+                        <li> หน้าต่างรับแสงธรรมชาติ</li>
+                        
+                        <h4>4. พื้นที่ส่วนกลาง (ถ้ามี) </h4>
+                        <li>ระเบียงเล็กๆ สำหรับตากผ้า</li>
+                        <li> ที่จอดรถ</li>
+                       
+                      <div class="room-price">3,500 bath</div>
+                    </div>
+                  </div>
+            </div>
+      </div>
+         <section>
+              <h2>ชำระเงิน</h2>
+              <div class="input">
+                <label class="lable-name" for="name">Name on card</label><br>
+                <input type="text" required placeholder="Name"><br>
+                <label class="lable-email" for="email">Email</label><br>
+                <input type="email" required placeholder="Email"><br>
+                <label class="lable-select" for="card expirstion">Card expirstion</label><br>
+                <select class="exp_month" name="exp_month">
+                    <option value="">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select class="exp_year" name="exp_year">
+                    <option value="">Year</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>    
+                </select><br>
+                <label class="lable-cvv" for="cvv">Card Security Code</label><br>
+                <input type="text" required placeholder="Code"><br>
+                  
+
+                
+                <button>ทำการชำระเงิน</button>
+              </div>
+         </section>
+    </div>
+  
+</body>
+</html>

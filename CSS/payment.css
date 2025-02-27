@@ -1,0 +1,229 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+button{
+    font-weight: bold;
+}
+.login-container{
+    width: 60%;
+}
+body{
+    display: flex;
+    background-color: #F5F6F1;
+    margin-top: -10px;
+}
+.box-all{
+    display: flex;
+
+}
+.icon{
+    width: 820px;
+}
+.login-card img:hover{
+    background-color: initial;
+}
+
+.login-container{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    height: 1024px;
+    
+}
+.login-card{
+    width: 100%;
+    height: 1024px;
+    
+}
+.login-card h1{
+    font-size: 48px;
+    margin-left: 20px   ;
+}
+.login-card p{
+    font-size: 14px;
+
+}
+.login-form{
+    margin-top: 50px;
+}
+.input-group{
+    margin-top: 50px;
+}
+.input-group{
+    margin-top: 50px;
+}
+.input-group input{
+    width: 400px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #7BB9FA;
+    padding: 0px;
+    padding-left: 10px;
+   
+}
+
+.label-email{
+    margin-right: 370px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.label-password{
+    margin-right: 345px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.icon{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+section{
+    text-align: center;
+    align-items:end;
+    width: 100%;
+    width: 700px;
+    color: #ffffff;
+    background: url(img/BG-login.png);
+    background-color: #E0CEBB;
+    & h2{
+        font-size: 64px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+  
+    & button{
+        width: 109px;
+        height: 43px;
+        color: white;
+        background-color: #875E42;
+        font-weight: 600;
+        box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-left: 190px;
+        border: 0px solid #ffffff;
+    }
+    & button:hover{
+        background-color: initial;
+       
+    }
+}  label{
+    font-size: 14px;  
+    margin-right: 255px;
+    color: rgb(0, 0, 0);
+    
+}
+.lable-email{
+    margin-right:265px;
+    color: rgb(0, 0, 0);
+}
+.lable-name{
+    margin-right: 215px;
+    color: rgb(0, 0, 0);
+}
+.lable-select{
+    margin-right: 205px;
+    color: rgb(0, 0, 0);
+}
+.lable-cvv{
+    margin-right: 175px;
+    color: rgb(0, 0, 0);
+
+}
+input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 0px solid white;
+}
+select{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 130px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px solid white;
+    padding: 5px;
+
+}
+.exp_year{
+    margin-left: 35px;
+}
+.room-card {
+    width: 900px;
+    height: 892px;
+    
+    background-color: #f1e4d1; /* สีพื้นหลัง */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  
+  /* รูปภาพ */
+  .room-image {
+    width: 100%;
+    height: 55%; /* รูปกินพื้นที่ 55% */
+    object-fit: cover;
+  }
+  
+  /* เนื้อหา */
+  .room-content {
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%; /* เนื้อหากินพื้นที่ 45% */
+  }
+  .more_vert{
+    height: 24px;
+    width: 24px;
+    color: black;
+    
+    margin-left: 175px;
+  }
+  
+  .room-content h3 {
+    font-size: 28px;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #8b5e34;
+  }
+  
+  .room-content p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.5;
+    font-size: 16px;
+  
+  }
+  li{
+    margin-left: 60px;
+    font-size: 16px;
+  }
+  h4{
+    margin-left: 30px;
+    font-size: 16px;
+  }
+  .room-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8b5e34;
+    text-align: left;
+    margin-bottom: 5px;
+  }

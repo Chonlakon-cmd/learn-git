@@ -1,0 +1,77 @@
+*{
+    font-family: 'poppins' Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F5F6F1;
+    display: flex;
+    justify-content: space-between;
+}
+.back{
+    text-align: left;
+    align-items: left;
+    padding: 20px;
+}
+.container{
+    background-color: #E7DFC5;
+    width: 773px;
+    height: 1223px;
+    text-align: center;
+}
+.account{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 554px;
+    height: 91px;
+    border-radius: 50px;
+    color: 2px solid black;
+    box-shadow: 0px 2px 0px rgb(0, 0, 0,0.25) ;
+    margin-top: 50px;
+    font-size: 34px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: initial;
+    cursor: pointer;
+}
+a{
+    color: black;
+    text-decoration: none;
+   
+}
+
+p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 34px;
+    color: black;
+    margin-bottom: 80px;
+}
+.btn-logout{
+    color: red;
+}
+.btn-month a{
+    margin-left: 40px;
+    
+}
+.check{
+    margin-left: 200px;
+    font-size: 20px;
+}
+input[type="checkbox"] {
+    width: 24px;  
+    height: 24px; 
+}
+.bi-download::before {
+    font-weight: bold; 
+}
+.bi-download {
+    font-size: 25px; 
+}

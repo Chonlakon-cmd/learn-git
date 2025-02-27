@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repair</title>
+    <link rel="stylesheet" href="/CSS/repair.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <a  href="/HTML/account.html"><img class="back" src="img/Vector.png" alt=""></a>
+    <div class="container">
+            <div class="account"><img src="img/qlementine-icons_user-16.png" alt=""></div>
+            <p>67021589@up.ac.th</p>
+            <h1>Welcome to chonlakon nualbun</h1>
+            <div class="box">
+                <h3><img class="repair" src="img/material-symbols_build-outline.png" alt=""><div class="text-repair">ซ่อมแซม</div> </h3>
+                <textarea class="box-text" name="repair" id="" placeholder="แจ้งซ่อมที่นี่"></textarea>
+                <button onclick="showMoveOut()" >send</button>
+            </div>
+    </div>
+   <div> </div>
+   <div id="moveout-popup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div class="section">
+        <div class="text-popup">
+            แอดมินจะติดต่อกลับในเร็วๆนี้
+        </div>
+        <div class="box-popup">
+            <div class="img-box">
+                <img class="img-tack" src="img/🦆 icon _task_.svg" alt="">
+            </div>
+            <p class="text-popup text-sub">เราได้บันทึกคำตอบของท่านไว้แล้ว</p>
+            <a href="account.html" style="text-decoration: none;"><button class="btn-home btn-popup-home">กลับสู่หน้าหลัก</button></a>
+       
+    </div>
+   
+</div>
+</body>
+<script>
+         function showMoveOut() {
+            document.getElementById("moveout-popup").style.display = "block";
+        }
+        function closePopup() {
+            document.getElementById("moveout-popup").style.display = "none";
+        }
+</script>
+
+</html>

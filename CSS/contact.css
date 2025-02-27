@@ -1,0 +1,125 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F6F1;
+}
+
+nav {
+  height: 117px;
+  max-height: 167px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E7DFC5;
+  border-end-end-radius: 50px;
+  border-end-start-radius: 50px;
+}
+
+nav .logo {
+  width: 82px;
+  margin: 0 100px;
+}
+
+.menutext {
+  display: flex;
+  margin-left: 250px;
+  font-size: 20px;
+  margin-top: 0px;
+}
+ul a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul a:hover {
+  text-decoration: none;
+  color: #C5BEB8;
+}
+
+.text {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.btn {
+  height: 60px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.btn button {
+  width: 159px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #E7DFC5;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: #C5BEB8;
+}
+  .border-none{
+      border: 0px solid rgb(0, 0, 0);
+  }
+  section{
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  section h1{
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+  section h3{
+    font-size: 28px;
+    font-weight: normal;
+  }
+  .container{
+    width: 1241px;
+    height: 472px;
+    text-align: left;
+    margin-left: 115px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 30px;
+    margin-top: 32px;
+   box-shadow: 0px 4px 0px rgb(0, 0, 0,0.25);
+  }
+  .container h4{
+    font-size: 28px;
+  }
+  .container p{
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container img{
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+  }
+  footer{
+    border-top: 3px solid #875E42;
+    font-size: 24px;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 79px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+  }
+  .by{
+    margin-top: 50px;
+    color: #875E42;
+    font-weight: 600;
+    text-shadow: 0px 1px 5px rgb(0, 0, 0,0.25);
+  }

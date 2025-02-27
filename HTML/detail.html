@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>detail</title>
+  <link rel="stylesheet" href="/CSS/detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="/JS/script.js"></script>
+
+</head>
+<body>
+  
+    
+    <a  href="/HTML/homeaccount.html"><img class="back" src="img/Vector.png" alt=""></a>
+    <div class="container">
+        <div class="img">
+          <img src="/HTML/img/detallreoom.svg.svg" alt="">
+        </div>
+        <h2>  
+          Room 1 รายละเอียด 
+        </h2>
+        <h3>
+          รายละเอียดภายในบ้านพักราคา 4,000 บาท
+        </h3>
+        <h3>ห้องนอน</h3>
+        <li>ขนาด: 1 ห้องนอน (ประมาณ 3x4 เมตร)</li>
+        <li>เฟอร์นิเจอร์: เตียงขนาด 5 ฟุต, ตู้เสื้อผ้า, โต๊ะเครื่องแป้ง</li>
+        <li>เครื่องปรับอากาศ</li>
+        <h3>ห้องน้ำ</h3>
+        <li>สิ่งอำนวยความสะดวก: โถสุขภัณฑ์, ฝักบัว, อ่างล้างหน้า</li>
+        <li>มีระบบน้ำอุ่น</li>
+        <h3>สิ่งอำนวยความสะดวกในบ้าน</h3>
+        <li>ผ้าม่านกันแสง</li>
+        <li>พื้นปูด้วยกระเบื้อง</li>
+        <li>หน้าต่างรับแสงธรรมชาติ</li>
+        <h3>พื้นที่ส่วนกลาง</h3>
+        <li>ที่จอดรถ</li>
+        <li>ระเบียงเล็กๆ สำหรับตากผ้า</li>
+        <div class="price">
+          3,500 baht
+          <button onclick="showMoveOut()" class="btn">ทำการจอง</button>
+        </div>
+        
+    </div>
+    <span>  </span>
+  <div id="moveout-popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h4>ทำการกรอกข้อมูลที่อยู่</h4>
+        <div class="btn-g-popup">
+           <label for="name">ชื่อ</label><br>
+           <input type="name" disabled  placeholder="เก้าแต่ไม่สิบ"><br>
+           <label for="lastname">นามสกุล</label><br>
+           <input type="name" disabled placeholder="สิบลบเก้า"><br>
+           <label for="name">ที่อยู่</label><br>
+           <textarea class="textarea" name="ip" id="" placeholder="กรอกที่อยู่ของท่าน"></textarea><br>
+           <button onclick="showMoveOut()" id="completeButton" class="btn btn-pop">ทำการจอง</button>
+        </div>
+  </div>
+  <div id="successPopup" class="success-popup">
+    🎉 เสร็จสิ้น! ข้อมูลของคุณถูกบันทึกแล้ว
+  </div>
+    
+</body>
+
+<script>
+  function showMoveOut() {
+  document.getElementById("moveout-popup").style.display = "block";
+}
+function closePopup() {
+  document.getElementById("moveout-popup").style.display = "none";
+}
+
+
+</script>
+
+</html>

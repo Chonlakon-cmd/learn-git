@@ -1,0 +1,169 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+
+body{
+    display: flex;
+    background-color: #F5F6F1;
+    padding: 20px;
+   
+ 
+    justify-content: space-between;
+}
+.box{
+    
+    display: flex;
+}
+.container{
+   padding: 20px;
+    border: 0px solid red;
+    background-color: #E0CEBB;
+    border-radius: 20px;
+    
+    h2{
+        font-size: 28px;
+        font-weight: normal;
+        color: #875E42;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: normal;
+        color: #000000;
+    }
+    li{
+        font-size: 16px;
+        font-weight: normal;
+        color: #000000;
+        margin-left: 30px;
+    }
+    .price{
+        display: flex; 
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: bold;
+        color: #875E42;
+        margin-top: 20px;
+    }
+    
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: none;
+    text-align: start;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.popup h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.popup .close:hover {
+    color: #875E42;
+}
+
+input[type="text"], 
+.textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus, 
+.textarea:focus {
+    border-color: #875E42;
+    box-shadow: 0 0 5px rgba(135, 94, 66, 0.5);
+    outline: none;
+}
+
+.textarea {
+    height: 90px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 140px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #9c6b4a, #6d4833);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #6d4833, #9c6b4a);
+    transform: scale(1.05);
+}
+
+.btn-popup {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.success-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.success-popup.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
