@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
   }
   
   body {
@@ -313,7 +314,9 @@
     color: rgb(0, 0, 0);
   }
   .researchs a:hover{
-    background-color: #875E42;
+    cursor: pointer;
+    background-color: #E7DFC5;
+    
   }
   header{
     font-size: 48px;

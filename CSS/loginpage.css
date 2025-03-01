@@ -113,7 +113,12 @@ section button a{
 section button:hover{
     background-color: initial;
 }
-
+button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
 .forgetpassword-text{
     margin-top: 50px;
     margin-left: 245px;
