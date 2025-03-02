@@ -129,30 +129,47 @@
                     <td>
                         <button class="btn pay-btn "data-bs-toggle="modal" data-bs-target="#paymentModal">ชำระ</button>
                     </td>
-                    
-                        <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
+                    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h5 class="modal-title" id="paymentModalLabel">ยืนยันการชำระเงิน</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h5 class="modal-title" id="paymentModalLabel">ยืนยันการชำระเงิน</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img src="https://cdn.pixabay.com/photo/2013/07/12/14/45/qr-code-148732_1280.png" alt="" style="width: 150px ;height: 150px;">
+                                <div class="modal-body text-center">
+                                    <img id="previewImage" src="https://cdn.pixabay.com/photo/2013/07/12/14/45/qr-code-148732_1280.png"
+                                        alt="QR Code" style="width: 150px; height: 150px; object-fit: cover;">
                                 </div>
-                                <div class="mb-2">
-                                    <label for="fileUpload" class="btn btnUp ms-4">
+                                <div class="mb-2 d-flex justify-content-between align-items-center px-3">
+                                    <label for="fileUpload" class="btn btnUp">
                                         <i class="bi bi-arrow-bar-up"></i> อัพโหลดไฟล์
                                     </label>
                                     <input type="file" id="fileUpload" class="d-none">
+                                    <a id="fileLink" href="#" target="_blank" class="d-none text-primary">🔗 ดูไฟล์ที่อัพโหลด</a>
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
-                                <button class="btn btnfinish"  id="confirmPaymentBtn">ชำระเงิน</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                                    <button class="btn btnfinish" id="confirmPaymentBtn">ชำระเงิน</button>
                                 </div>
                             </div>
-                            </div>
                         </div>
+                    </div>
+                    
+                    <script>
+                    document.getElementById('fileUpload').addEventListener('change', function(event) {
+                        const file = event.target.files[0]; // ดึงไฟล์ที่อัพโหลด
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.onload = function(e) {
+                                document.getElementById('fileLink').href = e.target.result; // ตั้งค่า href ของลิงก์ให้เปิดไฟล์
+                                document.getElementById('fileLink').classList.remove('d-none'); // แสดงลิงก์
+                            };
+                            reader.readAsDataURL(file);
+                        }
+                    });
+                    </script>
+                    
+                    
 
 
                         <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
