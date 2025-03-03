@@ -23,10 +23,41 @@
             <p class="text"><a href="/login/gallery.html">Gallery</a></p>
             <p class="text"><a href="/login/contact.html">Contact</a></p>
         </ul>
+        <!-- ปุ่มรูปโปรไฟล์ -->
         <div class="btn">
-            <a href="/HTML/account.html"><img src="img/account.png" alt=""></a>
+            <img src="img/account.png" alt="Account" id="account-btn">
         </div>
     </nav>
+    <div class="hamburger-menu" id="hamburger-menu">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <nav>
+            <div class="account"><img src="img/qlementine-icons_user-16.png" alt=""></div>
+            <button   
+            class="  btn-room"><a class="btn dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">ห้อง</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/HTML/detail2.html">รายละเอียดห้อง</a></li>
+                <li><a class="dropdown-item" href="/HTML/cancel_reservation.html">ยกเลิกการจอง</a></li>
+                <li><a class="dropdown-item" href="/HTML/moveout.html">ย้ายออก</a></li>
+            </ul>
+           </button><br>
+           <button onclick="window.location.href='/HTML/paymentpermont.html'" class=" btn-prie">
+               <a class="btn" href="/HTML/paymentpermont.html">ชำระเงิน</a>
+           </button><br>
+           <button onclick="window.location.href='/HTML/repair.html'" class=" btn-repair">
+               <a class="btn" href="/HTML/repair.html">ซ่อมแซม</a>
+           </button><br>
+           
+           <button onclick="window.location.href='/HTML/notification.html'"  class=" btn-w">
+               <a class="btn" href="/HTML/notification.html">การแจ้งเตือน</a>
+           </button><br>
+           <button onclick="window.location.href='/HTML/moveout.html'" class=" btn-w">
+                   <a class="btn-logout btn" href="/HTML/moveout.html">ย้ายออก</a>
+           </button><br>
+           <button onclick="window.location.href='/HTML/homepage.html'" class=" btn-w">
+               <a class="btn-logout btn" href="/HTML/homepage.html">ออกจากระบบ</a>
+           </button>    
+        </nav>
+    </div>
     <div class="researchs">
         <a href="research.html">แบบสำรวจความต้องการ</a>
     </div>
@@ -151,6 +182,14 @@
             Powered by ไผ่แดงหมูกระทะ กลุ่ม 15
         </div>
     </footer>
+    <script src="/JS/hamburger.js"></script>
 </body>
-
+    <script>
+        function showMoveOut() {
+            document.getElementById("moveout-popup").style.display = "block";
+        }
+        function closePopup() {
+            document.getElementById("moveout-popup").style.display = "none";
+        }
+    </script>
 </html>
