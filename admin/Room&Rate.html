@@ -13,21 +13,23 @@
             font-weight: bold;
         }
     </style>
-    <title>Room & Rate</title>
+    <title>Room & Rate Admin</title>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <a href="/HTML/homeaccount.html"><img src="img/Logo.png" alt=""></a>
+            <a href="/admin/homeaccount.html"><img src="img/Logo.png" alt=""></a>
         </div>
         <ul class="menutext">
             <p class="text"><a href="#">Home</a></p>
-            <p class="text"><a href="/login/Room&Rate.html">Room & Rate</a></p>
-            <p class="text"><a href="/login/gallery.html">Gallery</a></p>
-            <p class="text"><a href="/login/contact.html">Contact</a></p>
+            <p class="text"><a href="/admin/Room&Rate.html">Room & Rate</a></p>
+            <p class="text"><a href="/admin/gallery.html">Gallery</a></p>
+            <p class="text"><a href="/admin/contact.html">Contact</a></p>
         </ul>
         <!-- ปุ่มรูปโปรไฟล์ -->
+      
         <div class="btn">
+            <a style="margin-right: 50px;" href="/HTML/status.html"><img src="img/notifications_24dp_000000_FILL0_wght700_GRAD0_opsz40.svg" alt=""></a>
             <img src="img/account.png" alt="Account" id="account-btn">
         </div>
     </nav>
@@ -35,19 +37,12 @@
         <button class="close-btn" id="close-btn">&times;</button>
         <nav>
             <div class="account"><img src="img/qlementine-icons_user-16.png" alt=""></div>
-            <button   
-            class="  btn-room"><a class="btn dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">ห้อง</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/HTML/detail2.html">รายละเอียดห้อง</a></li>
-                <li><a class="dropdown-item" href="/HTML/cancel_reservation.html">ยกเลิกการจอง</a></li>
-                <li><a class="dropdown-item" href="/HTML/moveout.html">ย้ายออก</a></li>
-            </ul>
+            
+           <button onclick="window.location.href='/HTML/status.html'" class=" btn-prie">
+               <a class="btn" href="/HTML/status.html">สลิปการจ่ายเงิน </a>
            </button><br>
-           <button onclick="window.location.href='/HTML/paymentpermont.html'" class=" btn-prie">
-               <a class="btn" href="/HTML/paymentpermont.html">ชำระเงิน</a>
-           </button><br>
-           <button onclick="window.location.href='/HTML/repair.html'" class=" btn-repair">
-               <a class="btn" href="/HTML/repair.html">ซ่อมแซม</a>
+           <button onclick="window.location.href='/admin/status_room.html'" class=" btn-repair">
+               <a class="btn" href="/admin/status_room.html">สถานะห้อง</a>
            </button><br>
            
            <button onclick="window.location.href='/HTML/notification.html'"  class=" btn-w">

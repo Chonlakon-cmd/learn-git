@@ -121,7 +121,7 @@ button:hover{
 }
 .forgetpassword-text{
     margin-top: 50px;
-    margin-left: 245px;
+
    
 }
 .forgetpassword-text a{
@@ -144,4 +144,9 @@ button:hover{
     margin-left: 30%;
     margin-top: 50px;
 }
-
+.text-regisnter{
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 40px;
+    color: #875E42;
+}

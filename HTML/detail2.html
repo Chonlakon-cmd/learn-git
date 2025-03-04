@@ -6,63 +6,91 @@
     <title>detail2</title>
     <link rel="stylesheet" href="/CSS/detail2.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
- 
-    <a  href="/HTML/homeaccount.html"><img class="back" src="img/Vector.png" alt=""></a>
+    <a href="/HTML/homeaccount.html"><img class="back" src="img/Vector.png" alt="Back"></a>
     <div class="container">
-           <img src="img/unsplash_2a5L6tXGL14.svg" alt="">
-
+        <img src="img/unsplash_2a5L6tXGL14.svg" alt="Room Image">
         <h1>
-            Room 1  รายละเอียด   
+            Room <span id="room-number"></span> รายละเอียด
             <div class="checkbox">
                 <label class="checkbox-container">
-                <input type="checkbox" checked>
-                <span class="checkmark"></span>
-              </label>  
-            <span class="check" >เช่าแล้ว</span> 
+                    <input type="checkbox" id="booking-status" disabled>
+                    <span class="checkmark"></span>
+                </label>
+                <span class="check" id="booking-status-text">ยังไม่ได้เช่าอยู่</span>
             </div>
-            
         </h1>
         <p>
-            <h2>
-                รายละเอียดภายในบ้านพักราคา 4,000 บาท
-            </h2>
-            <h3>
-                1.ห้องนอน
+            <h2><div class="tenant-name" id="tenant-name">ชื่อผู้เช่า: -</div></h2>
+            <h2 id="room-price">รายละเอียดภายในบ้านพักราคา 4,000 บาท</h2>
+            <h3>1.ห้องนอน</h3>
+            <ul>
                 <li>ขนาด: 1 ห้องนอน (ประมาณ 3x4 เมตร)</li>
                 <li>เฟอร์นิเจอร์: เตียงขนาด 5 ฟุต, ตู้เสื้อผ้า, โต๊ะเครื่องแป้ง</li>
                 <li>เครื่องปรับอากาศ</li>
-            </h3>
-            <h3>
-                2.ห้องน้ำ
+            </ul>
+            <h3>2.ห้องน้ำ</h3>
+            <ul>
                 <li>สิ่งอำนวยความสะดวก: โถสุขภัณฑ์, ฝักบัว, อ่างล้างหน้า</li>
                 <li>มีระบบน้ำอุ่น</li>
-            </h3>
-            <h3>
-                3.สิ่งอำนวยความสะดวกในบ้าน 
+            </ul>
+            <h3>3.สิ่งอำนวยความสะดวกในบ้าน</h3>
+            <ul>
                 <li>ผ้าม่านกันแสง</li>
                 <li>พื้นปูด้วยกระเบื้อง</li>
                 <li>หน้าต่างรับแสงธรรมชาติ</li>
-            </h3>
-            <h3>
-                4.พื้นที่ส่วนกลาง 
+            </ul>
+            <h3>4.พื้นที่ส่วนกลาง</h3>
+            <ul>
                 <li>ที่จอดรถ</li>
                 <li>ระเบียงเล็กๆ สำหรับตากผ้า</li>
-            </h3>   
-         <div class="date">
-            วันเข้าจอง 1/1/2025  หมดประกัน 1/1/2026    
-         </div>
-         <a href="evidence.html" class="evidence">หลักฐานการเข้าอยู่</a>
-         <div class="price">
+            </ul>
+            <div class="date" id="booking-dates">
+                วันเข้าจอง: <span id="check-in-date">1/1/2025</span> หมดประกัน: <span id="check-out-date">1/1/2026</span>
+            </div>
             
-            3500 baht
-         </div>
-          
+            <a href="evidence.html" class="evidence">หลักฐานการเข้าอยู่</a>
+            <div class="price" id="final-price">3500 baht</div>
         </p>
     </div>
-   <div> </div>
-  
+    <div></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const roomNumber = "1"; // You can dynamically set this based on the room being viewed
+            const bookingStatus = localStorage.getItem(`room_${roomNumber}`) === "booked";
+            const bookedBy = localStorage.getItem(`room_${roomNumber}_user`) || "-";
+            const checkInDate = localStorage.getItem(`room_${roomNumber}_checkInDate`) || "1/1/2025";
+            const checkOutDate = localStorage.getItem(`room_${roomNumber}_checkOutDate`) || "1/1/2026";
+            const roomPrice = localStorage.getItem(`room_${roomNumber}_price`) || "3500 baht";
+
+            document.getElementById("room-number").textContent = roomNumber;
+            document.getElementById("booking-status").checked = bookingStatus;
+            document.getElementById("booking-status-text").textContent = bookingStatus ? "เช่าแล้ว" : "ยังไม่ได้เช่าอยู่";
+            document.getElementById("check-in-date").textContent = checkInDate;
+            document.getElementById("check-out-date").textContent = checkOutDate;
+            document.getElementById("final-price").textContent = roomPrice;
+            document.getElementById("tenant-name").textContent = `ชื่อผู้เช่า: ${bookedBy}`;
+        });
+
+        // Function to update booking information
+        function updateBookingInfo(roomNumber, userName, checkInDate, checkOutDate, roomPrice) {
+            localStorage.setItem(`room_${roomNumber}`, "booked");
+            localStorage.setItem(`room_${roomNumber}_user`, userName);
+            localStorage.setItem(`room_${roomNumber}_checkInDate`, checkInDate);
+            localStorage.setItem(`room_${roomNumber}_checkOutDate`, checkOutDate);
+            localStorage.setItem(`room_${roomNumber}_price`, roomPrice);
+
+            document.getElementById("booking-status").checked = true;
+            document.getElementById("booking-status-text").textContent = "เช่าแล้ว";
+            document.getElementById("tenant-name").textContent = `ชื่อผู้เช่า: ${userName}`;
+            document.getElementById("check-in-date").textContent = checkInDate;
+            document.getElementById("check-out-date").textContent = checkOutDate;
+            document.getElementById("final-price").textContent = roomPrice;
+        }
+
+        // Example usage of the updateBookingInfo function
+        // updateBookingInfo("1", "John Doe", "1/1/2025", "1/1/2026", "3500 baht");
+    </script>
 </body>
 </html>

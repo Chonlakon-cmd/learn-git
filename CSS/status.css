@@ -1,0 +1,86 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #F5F6F1;
+}
+nav{
+
+    height: 117px;
+    max-height: 167px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E7DFC5;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 50px;
+}
+nav .logo{
+    width: 360px;
+    width: 82px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.menutext{
+    display: flex;
+    margin-left: 250px;
+    font-size: 20px;
+
+}
+ul a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+ul a:hover{
+    text-decoration: none;
+    color: #C5BEB8;
+}
+.text{
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+
+.status-box{
+  
+    height: 780px;
+    background-color: white;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.text-status ,p{
+    width: 388px;
+    height: 172px;
+    font-size: 35px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+button{
+    background-color: #B3500E;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: white;
+}
+button:hover{
+    background-color: #b36634;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button:active{
+    background-color: #853c0b;
+}
+.numpage{
+    margin-bottom: 50px;
+}

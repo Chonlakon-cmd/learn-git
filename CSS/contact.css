@@ -187,9 +187,12 @@ ul a:hover {
     font-size: 20px;
     margin-left: 50px;
     margin-top: 15px;
-  }
-  .btn-logout {
-    color: red;
+    text-decoration: none;
   }
   
+  .btn{
+    color: #000;
+  }.btn-logout {
+    color: red;
+  }
 }

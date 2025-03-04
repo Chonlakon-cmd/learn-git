@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+<link rel="stylesheet" href="/CSS/contact.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/admin/homeaccount.html"><img src="img/Logo.png" alt=""></a>
+        </div>
+        <ul class="menutext">
+            <p class="text"><a href="#">Home</a></p>
+            <p class="text"><a href="/admin/Room&Rate.html">Room & Rate</a></p>
+            <p class="text"><a href="/admin/gallery.html">Gallery</a></p>
+            <p class="text"><a href="/admin/contact.html">Contact</a></p>
+        </ul>
+        <!-- ปุ่มรูปโปรไฟล์ -->
+      
+        <div class="btn">
+            <a style="margin-right: 50px;" href="/HTML/status.html"><img src="img/notifications_24dp_000000_FILL0_wght700_GRAD0_opsz40.svg" alt=""></a>
+            <img src="img/account.png" alt="Account" id="account-btn">
+        </div>
+    </nav>
+    <div class="hamburger-menu" id="hamburger-menu">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <nav>
+            <div class="account"><img src="img/qlementine-icons_user-16.png" alt=""></div>
+            
+           <button onclick="window.location.href='/HTML/status.html'" class=" btn-prie">
+               <a class="btn" href="/HTML/status.html">สลิปการจ่ายเงิน </a>
+           </button><br>
+           <button onclick="window.location.href='/admin/status_room.html'" class=" btn-repair">
+               <a class="btn" href="/admin/status_room.html">สถานะห้อง</a>
+           </button><br>
+           
+           <button onclick="window.location.href='/HTML/notification.html'"  class=" btn-w">
+               <a class="btn" href="/HTML/notification.html">การแจ้งเตือน</a>
+           </button><br>
+           <button onclick="window.location.href='/HTML/moveout.html'" class=" btn-w">
+                   <a class="btn-logout btn" href="/HTML/moveout.html">ย้ายออก</a>
+           </button><br>
+           <button onclick="window.location.href='/HTML/homepage.html'" class=" btn-w">
+               <a class="btn-logout btn" href="/HTML/homepage.html">ออกจากระบบ</a>
+           </button>    
+        </nav>
+    </div>
+    <section>
+        <h1>Contact</h1>
+        <h3>ติดต่อบ้านพักมนนพันธ์</h3>
+
+    <div class="container">
+        <div class="ip">
+            <h4>ที่อยู่ :</h4>
+            <p><img src="img/f7_house-fill.png" alt="">บ้านพักมนนพันธ์, บ้านเลขที่ 523 ม.2 , ตำบลแม่กา, อำเภอเมืองพะเยา, จังหวัดพะเยา 56000</p>
+        </div>
+        <div class="contact">
+            <h4>ข้อมูลการติดต่อ :</h4>
+            <p class="phone-number"><img src="img/call.png" alt="">088-267-1266 </p>
+            <p class="facebook"><img src="img/facebook.png" alt="">มนนพันธ์ ไชยสาร</p>
+            <p class="line"><img src="img/line.png" alt="">088-267-1266</p>
+        </div>
+    </div>  
+
+    </section>
+   
+    <footer>
+        <div class="by">
+            Powered by ไผ่แดงหมูกระทะ กลุ่ม 15
+        </div>
+    </footer>
+    <script src="/JS/hamburger.js"></script>
+</body>
+</html>
